@@ -67,8 +67,10 @@ function Money(i){
   let cur = i
   if(i>30000){
     cust.innerHTML="미쳤어요? 안사요!!!!!!!!"
-    cust2.innerHTML="YOU FAILED"}
-  else{
+    cust2.innerHTML="DOWN"}
+  else if(i<25000){ cust.innerHTML="뭐그렇게 싸요? 사기죠?? 흥"
+    cust2.innerHTML="UP"}
+  else {
     cust.innerHTML="합리적인 가격이군요!"
     cust2.innerHTML="당신이 받은 현금"
   d = parseInt(cur / 50000)//소수점 버리기
